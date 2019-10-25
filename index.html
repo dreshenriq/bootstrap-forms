@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Digital Audio Workstation Quiz</title>
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+  </head>
+  <body>
+
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-8">
+
+<h1>Test your knowledge on DAWs below!</h1>
+
+
+<p>A DAW is an electronic device or software for sound designers and musicians alike. Used for editing, recording, mixing, and creating different audio files, DAWs are found in setups ranging from the smallest of laptops to the most complex of studio systems. There are many different versions to choose from.  Some are free, but most come at a hefty price. Acquiring a DAW is usually the first step aspiring producers will take towards their career in audio so it is well worth the investment. </p>
+
+<p><a href="https://en.wikipedia.org/wiki/Digital_audio_workstation"> Link to Wikipedia Article.</a></p>
+
+        <form id="myForm" action="js/form_processor.js" method="post">
+
+    <div class="form-group">
+      <label for="Q1">What is DAW an acronym for?</label>
+      <input type="text" name="acronym" class="form-control" id="Q1" >
+    </div>
+
+    <div class="form-group">
+      <label for="Q2">What is the name of the recording company considered to have built the first DAW in 1978?</label>
+      <input type="text" name="company" class="form-control" id="Q2" >
+    </div>
+
+    <div class="form-group">
+      <label for="Q3">Briefly describe the importance of a DAW's ability to "undo" a previous action.</label>
+      <textarea class="form-control" name="freeResponse" id="Q3" rows="4"></textarea>
+    </div>
+
+    <div class="form-group">
+
+        <label>Which of the following file formats will a DAW produce? (Please select one.)</label>
+      <div class="form-check">
+         <label class="form-check-label"><input class="form-check-input" type="radio" name="fileFormat" value="Video File"> Video File</label>
+       </div>
+
+      <div class="form-check">
+        <label class="form-check-label"><input class="form-check-input" type="radio" name="fileFormat" value="Wav File"> Wav File</label>
+      </div>
+
+      <div class="form-check">
+        <label class="form-check-label"><input class="form-check-input" type="radio" name="fileFormat" value="Audio File"> Wav File</label>
+      </div>
+
+      <div class="form-check">
+        <label class="form-check-label"> <input class="form-check-input" type="radio" name="fileFormat" value="Bin File"> Bin File</label>
+
+    </div>
+
+    </div>
+
+    <div class="form-group">
+
+        <label>Which of the following are notable commercial DAWs? (Please check all that apply.)</label>
+
+      <div class="form-check">
+         <label class="form-check-label"><input class="form-check-input" type="checkbox" name="checkQuestion" value="Ableton Live"> Ableton Live
+         </label>
+    </div>
+
+      <div class="form-check">
+        <label class="form-check-label"><input class="form-check-input" type="checkbox" name="checkQuestion" value="FL Studio"> FL Studio
+        </label>
+  </div>
+
+      <div class="form-check">
+        <label class="form-check-label"><input class="form-check-input" type="checkbox" name="checkQuestion" value="REAPER"> REAPER
+        </label>
+  </div>
+
+      <div class="form-check">
+        <label class="form-check-label"><input class="form-check-input" type="checkbox" name="checkQuestion" value="Atom Pro"> Atom Pro
+        </label>
+
+    </div>
+
+    </div>
+
+    <div class="form-group">
+      <label for="Q6">Recording studios went "digital" after the introduction of what software? (Please select one.)</label>
+      <select name="optionQuestion" class="form-control" id="Q6">
+        <option value="option1">Cubase</option>
+        <option value="option2">Kontakt</option>
+        <option value="option3">Ableton Live</option>
+        <option value="option4">Pro Tools</option>
+        <option value="option5">Adobe Audition</option>
+        <option value="option6">Logic Pro</option>
+      </select>
+    </div>
+
+
+<div class="form-group">
+    <input type="submit" class="btn btn-primary" value="Submit Answers">
+    <input type="reset" class="btn btn-danger" value="Reset">
+</div>
+
+  </form>
+
+  <div id="showAnswers"> </div>
+
+</div>
+</div>
+</div>
+
+<script src="js/form_processor.js"></script>
+
+  </body>
+</html>
